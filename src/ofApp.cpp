@@ -115,7 +115,7 @@ void ofApp::update(){
     lineMesh.setMode( OF_PRIMITIVE_LINES );
     
     ofFloatColor scratchColor;
-    scratchColor.set( 1.0f, 1.0f, 1.0f );
+    scratchColor.set( 0,0,0);
     
     float lineConnectionMaxDistance =  100;//ofMap( cosf( currTime / 10.0f ) , -1.0f, 1.0f, 10.0f, 100.0f); //   ofGetMouseY() / 10.0f;
     float lineConnectionMaxDistanceSquared = lineConnectionMaxDistance * lineConnectionMaxDistance;
@@ -175,6 +175,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofBackground(255);
         trianglate.reset();
 //    int maxR = 1000;
 //    int n = 1000;
